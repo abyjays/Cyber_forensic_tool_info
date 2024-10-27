@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Forensic Tools</title>
+    <link rel="stylesheet" href="../../CSS/infopage.css">
+    <link rel="icon" type="image/x-icon" href="../../Images/forensicsicon.png">
+</head>
+<body>
+
+    <nav>
+        <button class="backbutton" onclick="location.href='../Main.html'"><img src="../../Images/left-arrow.png" width="37rem"></button>
+    </nav>
+
+    <main class="ani">
+        <div class="appiconborder">
+            <img class="appicon" src="../../Images/foremost.png" >
+        </div>
+        <p class="appname">Foremost</p> 
+
+        <button class="downloadbtn" onclick="location.href='https://www.kali.org/tools/foremost/'">Documentation</button>
+        
+        <div class="appinfos">
+
+            <p>
+                Foremost is an open-source digital forensics tool designed for file carving, which involves recovering files based on their file signatures. 
+                It is commonly used in forensic investigations to retrieve deleted or corrupted files from disk images or raw data. <br>
+                <ul>
+                    <u>Key Features:</u><br><br>
+                    <li> File Carving: 
+                        Foremost scans raw data and disk images to recover files by identifying known file headers and footers. <br><br>
+                    </li>
+
+                    <li>
+                        Support for Multiple File Types: It can recover various file types, including:
+
+                        <ul>
+                            <li>
+                                Images (JPEG, PNG, GIF, etc.)
+                            </li>
+
+                            <li>
+                                Documents (PDF, DOC, TXT, etc.)
+                            </li>
+
+                            <li>
+                                Audio files (MP3, WAV, etc.)
+                            </li>
+
+                            <li>
+                                Video files (MP4, AVI, etc.)
+                            </li>
+
+                        </ul>
+                    </li> <br>
+
+                    <li>
+                        Custom File Type Configurations: Users can modify configuration files to add custom file types or adjust parameters for file recovery. <br><br>
+                    </li>
+
+                    <li>
+                        Command-Line Interface: Foremost operates through a command-line interface, making it suitable for scripting and integration into automated workflows.<br><br>
+                    </li>
+
+                    <li>
+                        Cross-Platform: While primarily used on Linux, it can be run on Windows systems via compatibility layers like Cygwin.<br><br>
+                    </li>
+
+                    <u>How to use Foremost</u> <br><br>
+
+                    <ol type="1">
+                        <li>
+                            Installation: You can install Foremost on a Linux distribution using package managers, for example: <br>
+                            sudo apt-get install foremost
+                        </li><br>
+
+                        <li>
+                            Basic Usage: The basic command structure to run Foremost is: <br>
+                            foremost -i [input_file] -o [output_directory]
+                        </li><br>
+
+                        <ul>
+                            <li>-i: Specifies the input file (e.g., a disk image).</li>
+                            <li>-o: Specifies the output directory where recovered files will be saved.</li>
+                        </ul> <br>
+
+                        <li>
+                            Configuration: You can customize the file types to carve by modifying the configuration file located at /etc/foremost.conf (or similar, depending on the installation).
+                        </li><br>
+                    </ol>
+                </ul>
+
+                <u>Conclusion</u><br><br>
+                Foremost is a powerful tool for digital forensic investigations, especially for recovering deleted files. 
+                Its open-source nature, flexibility, and support for various file types make it a popular choice among forensic analysts and investigators. <br><br>
+
+                <ul>
+                    <u>Minimum System Requirements</u> <br><br>
+                    <li>Operating System:
+                        <ul>
+                            <li>Linux (most distributions, such as Ubuntu, Debian, CentOS, etc.)</li>
+                            <li>Can also be used on Windows via Cygwin.</l>
+                        </ul>
+                    </li><br>
+
+                    <li>Processor:
+                        <ul>
+                            <li>Any modern CPU (Intel or AMD).</li>
+                        </ul>
+                    </li><br>
+
+                    <li>RAM:
+                        <ul><li>Minimum 512 MB (1 GB recommended for better performance).</li></ul>
+                    </li><br>
+
+                    <li>Storage:
+                        <ul><li>Less than 100 MB for installation.</li>
+                            <li>
+                                Additional space required for recovered files, depending on the size of the data being processed.
+                            </li>
+                        </ul>
+                    </li><br>
+
+                    <u>Recommended System Requirements</u> <br><br>
+                    <li>
+                        Operating System:
+                        <ul>
+                            <li>Latest version of a popular Linux distribution (e.g., Ubuntu, Fedora).</li>
+                        </ul>
+                    </li><br>
+
+                    <li>
+                        Processor:
+                        <ul>
+                            <li>Dual-core processor or better.</li>
+                        </ul>
+                    </li><br>
+
+                    <li>
+                        RAM:
+                        <ul>
+                            <li>2 GB or more, especially useful when dealing with larger datasets.</li>
+                        </ul>
+                    </li><br>
+
+                    <li>
+                        Storage:
+                        <ul>
+                            <li>SSD for faster read/write operations, especially for large disk images.</li>
+                        </ul>
+                    </li><br>
+                </ul>
+            </p>
+        </div>
+    </main>
+
+    <div class="overlay"></div>
+</body>
+</html>

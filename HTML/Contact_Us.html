@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/Contact_Us.css">
+    <link rel="icon" type="image/x-icon" href="../Images/forensicsicon.png">
+    <script src="../Javascript/alertmessage.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="Main.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="#Contactus">Contact us</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" onsubmit="showAlert(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

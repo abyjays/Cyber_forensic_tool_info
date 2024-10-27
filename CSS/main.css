@@ -1,0 +1,352 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 100px;
+}
+    
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(153, 43, 180); 
+    border-radius: 20px;
+}
+     
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(173, 3, 173); 
+    border-radius: 20px;
+}
+    
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: purple; 
+}
+
+.background-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background: rgb(61, 61, 61);
+    margin-top: 5px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+nav a{
+    text-decoration: none;
+    background: -webkit-linear-gradient(109.6deg, rgb(97, 14, 128) 11.2%, rgb(238, 66, 102) 100.2%); 
+    background-color:blue;
+    margin-left: 20px;
+    margin-right: -30px;
+    font-size: 25px;
+    text-align: center;
+    background-clip: text;
+    color: transparent;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block; /* Make the link behave like a block for padding/border-radius */
+    transition: background 0.3s ease; /* Optional: smooth transition for hover effects */
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.search_bar{
+    float: right;
+    margin-right: 20px; 
+    
+}
+
+.searchbar {
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+.searchbtn {
+    margin-left: -4px; 
+    height: 30px;
+    border: 0; 
+    background: transparent; 
+    cursor: pointer;
+}
+
+.searchbtn:hover {
+    background-color: #007BFF;
+}
+
+section{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 20px;
+}
+
+.ani{
+    animation: fadeIn 6s ease-in-out forwards;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box{
+    background-color: rgb(61, 61, 61);
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.box1{
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.row1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+}
+
+.row1 button{
+    border-radius: 20px;
+    width: 10rem;
+    height: 10.3rem;
+    margin-top: 2px;
+    padding-right: 10.7rem;
+    padding-bottom: 10.9rem;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    color: white
+}
+
+/* Autopsy */
+.Autopsy img{
+    width: 9rem;
+}
+
+.Autopsy p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 50px;
+}
+
+/* Encase */
+.Encase img{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 9rem;
+}
+
+.Encase p{
+    font-size: 20px;
+    margin-top: -14px;
+    margin-left: 49px;
+}
+
+/* Foremost */
+.Foremost img{
+    width: 9rem;
+    margin-left: 20px;
+}
+
+.Foremost p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 40px;
+}
+
+/* FTK */
+.FTK img{
+    width: 9rem;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.FTK p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 65px;
+}
+
+/* Guymager */
+.Guymager img{
+    width: 9rem;
+    margin-left: 15px;
+}
+
+.Guymager p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 40px;
+}
+
+/* PhotoRec */
+.PhotoRec img{
+    width: 9rem;
+    margin-left: 13px;
+}
+
+.PhotoRec p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 40px;
+}
+
+/* ProDiscover */
+.ProDiscover img{
+    width: 9rem;
+    margin-top:50px;
+    margin-left: 10px;
+}
+
+.ProDiscover p{
+    font-size: 20px;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+/* Recuva */
+.Recuva img{
+    width: 9rem;
+}
+
+.Recuva p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 50px;
+}
+
+/* Regripper */
+.Regripper img{
+    width: 9rem;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.Regripper p{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 40px;
+}
+
+/* Scalpel */
+.Scalpel img{
+    width: 9rem;
+    margin-left: 10px;
+}
+
+.Scalpel p{
+    font-size: 20px;
+    margin-top: -3px;
+    margin-left: 50px;
+}
+
+/* Sleuthkit */
+.Sleuthkit img{
+    width: 6rem;
+    margin-left: 30px;
+
+}
+
+.Sleuthkit p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+/* Steghide */
+.Steghide img{
+    width: 9rem;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.Steghide p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 98vw;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-height: 600px) {
+    .footer {
+        position: fixed; /* Fix footer at bottom of viewport on smaller screens */
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.social{
+    list-style: none;
+    padding: 0;
+}
+
+.social li{
+    display: inline;
+    margin: 0 5px;
+}
+
+.social a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.social a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,88 @@
+*{
+  font-family: sans-serif;
+}
+body{
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures the video covers the area without distortion */
+  z-index: -1; /* Send it to the back */
+}
+
+.hero-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: -1; /* Send it to the back */
+}
+
+h1 {
+  background: -webkit-linear-gradient(109.6deg, rgb(84, 13, 110) 11.2%, rgb(238, 66, 102) 100.2%);
+  /* For WebKit browsers */
+  /* -webkit-background-clip: text;  */
+
+  /* Makes the text color transparent */
+  /* -webkit-text-fill-color: transparent; */
+
+  font-size: 70px;
+  text-align: center;
+  margin-bottom: 20px;
+
+ /* For other browsers */
+  background-clip: text;
+
+ /* Fallback for browsers that don't support background-clip */
+  color: transparent;
+}
+
+.ani{
+  animation: fadeIn 2s ease-in-out forwards; /* Plays once and stays at the final state */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  position: absolute;
+  padding: 10px 20px;
+  background: linear-gradient(109.6deg, rgb(84, 13, 110) 11.2%, rgb(238, 66, 102) 100.2%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  top: 83%; /* Move down 80% */
+  left: 45%; /* Center the button */
+}
+
+button:hover {
+  background: linear-gradient(109.6deg, rgb(100, 30, 150) 11.2%, rgb(255, 102, 153) 100.2%); /* Lighter gradient for hover */
+}
+
+p{
+  background: -webkit-linear-gradient(109.6deg, rgb(97, 14, 128) 11.2%, rgb(238, 66, 102) 100.2%);
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  text-align: center;
+  background-clip: text;
+  color: transparent;
+}
